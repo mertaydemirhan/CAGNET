@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CA89046-7270-48D0-B0D0-5FB71412BD96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAGNET</RootNamespace>
+    <AssemblyName>CAGNET</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CihazEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CihazEkrani.Designer.cs">
+      <DependentUpon>CihazEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\UserRecords.cs" />
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musEkle.Designer.cs">
+      <DependentUpon>musEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kulGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kulGuncelle.Designer.cs">
+      <DependentUpon>kulGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cihaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cihaz.Designer.cs">
+      <DependentUpon>Cihaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kulEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kulEkle.Designer.cs">
+      <DependentUpon>kulEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musIslem.Designer.cs">
+      <DependentUpon>musIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musOdeme.Designer.cs">
+      <DependentUpon>musOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriPaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriPaket.Designer.cs">
+      <DependentUpon>MusteriPaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paket.Designer.cs">
+      <DependentUpon>Paket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puclic.cs" />
+    <Compile Include="raporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporlama.Designer.cs">
+      <DependentUpon>raporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRecords.cs" />
+    <Compile Include="webProxy.cs" />
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CihazEkrani.resx">
+      <DependentUpon>CihazEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musEkle.resx">
+      <DependentUpon>musEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kulGuncelle.resx">
+      <DependentUpon>kulGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cihaz.resx">
+      <DependentUpon>Cihaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kulEkle.resx">
+      <DependentUpon>kulEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musIslem.resx">
+      <DependentUpon>musIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musOdeme.resx">
+      <DependentUpon>musOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriPaket.resx">
+      <DependentUpon>MusteriPaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paket.resx">
+      <DependentUpon>Paket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="raporlama.resx">
+      <DependentUpon>raporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
